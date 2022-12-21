@@ -1,0 +1,146 @@
+* {
+  font-size: 11px;
+  font-family: sans-serif;
+  color: #a09999;
+}
+body {
+  background-color: #dbdad8;
+}
+main {
+  display: grid;
+
+  gap: 3%;
+  width: 61%;
+  margin: auto;
+  margin-top: 7%;
+}
+.box {
+  border-radius: 1rem;
+
+  padding: 12% 12% 1%;
+}
+
+.TopSection {
+  display: flex;
+
+  gap: 1.4rem;
+}
+.TopSection img {
+  border-radius: 2rem;
+  width: 3rem;
+  height: 3rem;
+}
+.TopSection aside {
+  margin: 2% 0;
+}
+.article {
+  display: grid;
+  gap: 4%;
+}
+.article p {
+  font-size: 1.4rem;
+}
+
+.FirstBox {
+  background-color: rgba(64, 12, 160, 0.658);
+  background-image: url("images/bg-pattern-quotation.svg");
+  background-repeat: no-repeat;
+  background-position: 85% 0;
+
+  padding: 5% 5% 6%;
+}
+.FirstBox img {
+  border: 0.2rem solid grey;
+}
+.FirstBox aside {
+  color: aliceblue;
+  font-weight: bold;
+}
+.FirstBox p {
+  color: aliceblue;
+}
+.SecondBox {
+  background-color: #3f5164;
+}
+.SecondBox aside {
+  color: aliceblue;
+  font-weight: bold;
+}
+.SecondBox p {
+  color: aliceblue;
+}
+.ThirdBox {
+  background-color: white;
+}
+.ThirdBox aside {
+  color: #3f3e3e;
+  font-weight: bold;
+}
+.ThirdBox p {
+  color: #2b2a2a;
+  font-weight: bold;
+}
+.fourthBox {
+  background-color: rgba(2, 8, 22, 0.911);
+  color: grey;
+
+  padding: 5% 5% 6%;
+}
+.fourthBox img {
+  border: 0.2rem solid purple;
+}
+.fourthBox aside {
+  color: #dbdad8;
+  font-weight: bold;
+}
+.fourthBox p {
+  color: #dbdad8;
+}
+
+.fifthBox {
+  background-color: white;
+}
+.fifthBox aside {
+  color: #3f3e3e;
+  font-weight: bold;
+}
+.fifthBox p {
+  color: #3f3e3e;
+  font-weight: bold;
+}
+
+@media (min-width: 80rem) {
+  main {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .FirstBox {
+    grid-column: span 2;
+  }
+  .fourthBox {
+    grid-column: span 2;
+  }
+  .fifthBox {
+    grid-column-start: 4;
+    grid-row: 1/3;
+  }
+}
+@media (max-width: 80rem) {
+  main {
+    gap: 2%;
+    width: 97%;
+    margin: auto;
+    margin-top: 7%;
+    margin-bottom: 50%;
+  }
+
+  .article p {
+    font-size: 1.4rem;
+  }
+
+  .FirstBox {
+    padding: 4%;
+  }
+  .box {
+    padding: 6%;
+  }
+}
